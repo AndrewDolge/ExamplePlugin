@@ -1,15 +1,21 @@
 
 
 import csbot.core.Command;
-import csbot.core.DiscordMessageUtil;
-import net.dv8tion.jda.core.events.message.MessageReceivedEvent;
+import csbot.core.DiscordMessage;
+
 
 public class ExampleCommand implements Command{
 
 	@Override
-	public void execute(MessageReceivedEvent event, String message) {
+	public void initialize(String filePath) {
+		
+	}
+
+
+	@Override
+	public void execute(DiscordMessage message) {
    
-		DiscordMessageUtil.sendMessageWithMention(event, "ping!");
+		message.sendMessageWithMention("ping!");
 		
 	}
 

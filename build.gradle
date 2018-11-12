@@ -14,7 +14,7 @@ plugins {
 dependencies {
        api 'net.dv8tion:JDA:3.6.0_376'
 
-       compile files('libs/CSBotSDK-0.0.1.jar')
+       compile files('libs/CSBotSDK-0.0.9.jar')
       
 }
 
